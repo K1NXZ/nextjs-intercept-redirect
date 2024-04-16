@@ -1,7 +1,10 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <div className="p-4 flex flex-col">
+      <Link href="/create/post">Create Post</Link>
+      <Link href="/create/project">Create Project</Link>
+    </div>
   );
 }
